@@ -6,7 +6,7 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps {
-           sh 'sudo apt install npm -y' 
+           sh 'sudo -H -u root bash -c 'apt install npm -y'' 
         }
      }
      
